@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --grey: #565656;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    background-color: #E0E0E0;
+    
+    font-family: 'montserrat', sans-serif;
+    color: var(--grey);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 23%;
+    border-radius: 50px;
+    background: #E4E4E4;
+
+    box-shadow: -30px -30px 65px 0px #FFF, 30px 30px 65px 0px #B3B3B3;
+    padding: 3.5rem;
+}
+
+
+.search_bar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 50px;
+    background: linear-gradient(323deg, #E3E3E3 0%, #F0F0F0 100%);
+
+    box-shadow:  20px 20px 60px #bebebe,                
+    -20px -20px 60px #ffffff;
+}
+
+.search_bar input {
+    height: 27px;
+    border: none;
+    background-color: transparent;
+    font-family: 'montserrat', sans-serif;
+}
+
+.search_bar button {
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.weather_information{
+    border-radius: 50px;
+    background: #E4E4E4;
+    box-shadow: -30px -30px 65px 0px #FFF, 
+    30px 30px 65px 0px #B3B3B3;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2{
+    font-size: 20   0%;
+    margin: 20px 0;
+    border-bottom: 3px solid var(--grey);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 img {
+    margin-right: 10px;
+}
+
+.detailed_informations {
+    border-radius: 30px;
+    box-shadow: inset 20px 20px 60px #bebebe,
+                inset -20px -20px 60px #ffffff;
+
+    width: 75%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    font-weight: 600;
+    gap: 15px;
+
+}
+
+.description {
+    font-size: 80%;
+}
+
+.umidade_vento img {
+    margin: 0 0.5rem;
+}
+
+.umidade_vento {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
